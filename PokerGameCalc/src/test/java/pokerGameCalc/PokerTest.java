@@ -1,9 +1,7 @@
 package pokerGameCalc;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
-
 import pokerGameCalc.Hand;
 import pokerGameCalc.HandType;
 
@@ -12,10 +10,7 @@ import pokerGameCalc.HandType;
  *
  */
 public class PokerTest {
-//	7D 2S 5D 3S AC
-//	5C AD 5D AC 9C
-//	7C 5H 8D TD KS
-//	3H 7H 6S KC JS
+
 	Hand hand = new Hand();
 	@Test
 	public void evalHandTestPara() {
@@ -42,6 +37,8 @@ public class PokerTest {
 		assertEquals(HandType.FULL, hand.evalHand("2S 2K 2H 5C 5H"));
 	}
 	
-	
-
+//	@Test
+//	public void evalHandTestStrit(){
+//		assertEquals(HandType.STRIT, hand.evalHand("2S 3K 4H 5C 6H"));
+//	}
 }
